@@ -1,0 +1,39 @@
+/* 
+ * CSS for a news section
+ */
+
+body {
+ 	width: 80%;
+ 	padding-left: 10%;
+ 	padding-right: 10%;
+}
+
+body > header {
+	text-align: center;
+}
+
+article > header {
+	padding-left: 20px;
+}
+
+article p {
+	text-indent: 1em;
+}
+
+main {
+	width: 100%;
+}
+
+main > section {
+	width: 70%;
+	float: left;
+}
+
+main > aside {
+	width: 30%;
+	float: right;
+}
+
+section > article > footer > p {
+	text-align: right;
+}
