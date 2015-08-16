@@ -1,0 +1,69 @@
+@media screen and (min-width: 1024px) {
+	.about-container {
+		padding: 20px 10px;
+		width: 90%;
+		margin: 0 auto;
+	}
+
+	.about-container h1 {
+		color: #464547;
+		border-bottom: 5px solid #39C2D7;
+		margin-top: 0px;
+	}
+
+	.about-container h2 {
+		color: #464547;
+		margin-top: 0px;
+	}
+
+	.about-container h3 {
+		margin: 5px 0;
+	}
+
+	.about-firm-item {
+		width: 200px;
+		height: 200px;
+		float: left;
+		margin: 5px 10px;
+		text-align: center;
+	}
+
+	.about-firm-item::before {
+		content: "";
+		display: inline-block;
+		height: 100%;
+		vertical-align: middle;
+	}
+
+	.about-firm-item img {
+		vertical-align: middle;
+		max-height: 90%;
+		max-width: 90%;
+	}
+
+	.about-info {
+		padding: 5px 10px;
+		margin-right: 250px;
+	}
+
+	.about-contacts {
+		float: right;
+		width: 250px;
+		padding: 0px 10px;
+		border-left: 1px solid #ccc;
+	}
+
+	.about-contacts li {
+		padding-left: 10px;
+		list-style-type: none;
+	}
+
+	li.about-sub-li {
+		padding-left: 20px;
+	}
+
+	#about-map {
+		width: 100%;
+		height: 400px;
+	}
+}
