@@ -1,9 +1,7 @@
 #header *{
-/*    border: 1px solid red;*/
     margin: 0;
     padding: 0;
 }
-
 #header{
     width: 100%;
     background-color: #666;
@@ -31,7 +29,7 @@
     display: block;
     color: #ccc;
 }
-.wide-wrapper{
+#header .wide-wrapper{
     width: 90%;
     min-width: 1024px;
     margin: auto;
