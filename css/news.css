@@ -80,11 +80,14 @@ aside nav a {
 
 .news-article {
 	margin: 5px 5px 10px 5px;
+	width: 32%;
+	float: left;
 }
 
 .news-article header{
 	background-color: #999999;
 	color: #fff;
+	max-height: 300px;
 }
 
 .news-article section p {
@@ -112,5 +115,5 @@ aside nav a {
 }
 
 .news-article-read-more {
-	
+
 }
