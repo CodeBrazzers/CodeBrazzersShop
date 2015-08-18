@@ -1,12 +1,14 @@
 requirejs.config({
     paths: {
-        "exampleModule" : "modules/exampleModule"
+        "exampleModule" : "modules/exampleModule",
+        "db" : "modules/db",
+        "search" : "modules/search"
     }
 });
 
 require(
-    ['exampleModule'],
-    function(exModule){
-        // document.getElementsByTagName("body")[0].innerHTML = exModule.foo;
+    ['search'],
+    function(Search){
+        var searchButton =  document.getElementById("searchButton");
     }
 );
