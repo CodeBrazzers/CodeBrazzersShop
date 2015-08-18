@@ -1,0 +1,106 @@
+#header *{
+    margin: 0;
+    padding: 0;
+}
+#header{
+    width: 100%;
+    background-color: #666;
+}
+#header ul{
+    list-style: none;
+}
+#logo{
+    display: block;
+    width: 180px;
+    height: 60px;
+    background: url('../img/header/cb-logo.png');
+    float: left;
+    -webkit-transition-duration: .6s;
+    -o-transition-duration: .6s;
+    -moz-transition-duration: .6s;
+    transition-duration: .6s;
+}
+#logo:hover{
+    background: url('../img/header/cb-logo-hover.png');
+}
+#logo a, .search-cart-login-holder>li a, #nav a{
+    width: 100%;
+    height: 100%;
+    display: block;
+    color: #ccc;
+}
+#header .wide-wrapper{
+    width: 90%;
+    min-width: 1024px;
+    margin: auto;
+}
+#nav{
+    float: left;
+    position: relative;
+}
+#nav>li{
+    float: left;
+    height: 60px;
+    margin: 0 0 0 15px;
+    padding: 10px 0 0;
+}
+#nav>li:hover{
+    background-color: #464547;
+    box-shadow: 0 0 7px #222;
+    -webkit-transition-duration: .4s;
+    -o-transition-duration: .4s;
+    -moz-transition-duration: .4s;
+    transition-duration: .4s;
+}
+#nav>li a:hover{
+    color: #39C2D7;
+    text-decoration: none;
+}
+#nav li ul{
+    position: absolute;
+    display: none;
+}
+#nav li:hover ul{
+    display: block;
+}
+#nav li a{
+    font: 20px/1.8 'Source Sans Pro', sans-serif;
+    font-weight: 400;
+}
+#nav ul li{
+    background-color: #666;
+    padding: 0 15px 0;
+}
+#nav ul li:hover{
+    background-color: #464547;
+    box-shadow: 0 0 5px #222;
+    -webkit-transition-duration: .4s;
+    -o-transition-duration: .4s;
+    -moz-transition-duration: .4s;
+    transition-duration: .4s;
+}
+#nav:after, .wide-wrapper:after, .search-cart-login-holder:after{
+    clear: both;
+    display: block;
+    content: '';
+}
+.search-cart-login-holder{
+    float: right;
+}
+.search-cart-login-holder>li{
+    float: left;
+    width: 48px;
+    height: 60px;
+}
+.search a{
+/*    background: url('../img/icons/find.png');*/
+    background-color: #8E244D;
+}
+.cart{
+/*    background: url('../img/icons/cart.png');*/
+    background-color: #1A9CB0;
+}
+.login{
+/*    background: url('../img/icons/login.png');*/
+    background-color: #7F993A;
+}
