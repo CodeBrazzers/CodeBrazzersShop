@@ -42,7 +42,7 @@ body > main > aside {
 	height: 100%;
 	width: 20%;
 	float: right;
-	padding: 2%;
+	/*padding: 2%;*/
 	background-color: #1A9CB0;
 }
 
@@ -55,7 +55,7 @@ aside nav a {
 }
 
 #news-tags {
-	margin-top: 10px;
+	margin: 20px 5px 5px 5px;
 	background-color: #fff;
 	height: 200px;	
 	color: #000;		
@@ -103,4 +103,73 @@ aside nav a {
 
 .news-article-read-more {
 
+}
+
+.news-reviews-menu {
+	margin-top: 40px;
+	text-indent: 10px;
+	font-size: 2em;
+	text-transform: capitalize;
+}
+
+.news-reviews-menu a {
+	margin-right: 20px;
+	display: block;
+}
+
+.news-reviews-menu a:hover {
+	color: #7F993A;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.news-reviews-menu-selected {
+	color: #000;
+	background-color: #fff;
+}
+
+.news-sort {
+	text-align: center;
+}
+
+.news-sort i, ul, li, span {
+	display: inline;
+	padding-right: 20px;
+}
+
+.news-sort > ul > li {
+	position: relative;
+}
+
+.news-sort a {
+	text-decoration: none;
+	color: #727878;
+}
+
+.news-sort a:hover {
+	text-decoration: none;
+}
+
+.news-sort-dropdown {
+	position: absolute;
+	top: 100%;
+	left: 0;
+	background-color: #fff;
+	border: 1px solid #ccc;
+	width: 150px;
+	display: none;
+}
+
+.news-sort li:hover .news-sort-dropdown {
+	display: block;
+}
+
+.news-sort-dropdown li {
+	display: block;
+	text-align: left;
+	padding: 0 0 0 3px;
+}
+
+.news-sort-dropdown a:hover {
+	color: #464547;
 }

@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-	<title>CodeBrazzersShop</title>
+	<title>CodeBrazzersShop News</title>
 	<link rel="stylesheet" href="css/all.css">
 	<script data-main="js/main" src="js/require.js"></script>
 </head>
@@ -34,6 +34,26 @@
 	</header>
 	<main>
 		<section>
+			<div class='news-sort'>
+				<i class="fa fa-sort"></i>
+				<span>Sort by:</span>
+				<ul>
+					<li>
+						<a href="">Date</a>
+						<ul class='news-sort-dropdown'>
+							<li><a href="">Newest on Top</a></li>
+							<li><a href="">Oldest on Top</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="">Popularity</a>
+						<ul class='news-sort-dropdown'>
+							<li><a href="">Popular on Top</a></li>
+							<li><a href="">Popular on Bottom</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
 			<article class='news-article'>
 				<header>
 					<h2>Topic #1</h2>
@@ -129,13 +149,9 @@
 		</section>
 		<aside>
 			<nav>
-				<header>
-					<h3>Interesting news:<h3>
-				</header>
-				<ul>
-					<li><a href="">News about something</a></li>
-					<li><a href="">News about something else</a></li>
-					<li><a href="">Some other news</a></li>
+				<ul class='news-reviews-menu'>
+					<li><a class='news-reviews-menu-selected' href="">News</a></li>
+					<li><a href="">Reviews</a></li>
 				</ul>
 			</nav>
 			<section id='news-tags'>
