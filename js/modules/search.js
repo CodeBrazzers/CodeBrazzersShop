@@ -17,25 +17,24 @@ define('search', ['db'], function(db){
   				self.toggle();
   			}
 
-  			// if (!isDescendantOrSelf(event.target, activeBoxes)) {
-  			// 	self.close();
-  			// }
+  			if (!isDescendantOrSelf(event.target, activeBoxes)) {
+  				self.close();
+  			}
 
     	});
 
     }
-    /*
-		Incorrect return FIX!!!!
-    */
+   
     function isDescendantOrSelf(child,possibleParents) {
-    	var currentElement = child;
+    	var currentElement = child,
+    		result = false;
 
     	possibleParents.forEach( function (item, i) {
 
     		while (currentElement != document.body) {
 
     			if (currentElement == item) {
-    				
+    				result = true;
     				return true;
     			}
 
@@ -43,7 +42,7 @@ define('search', ['db'], function(db){
     		}
     	});
 
-    	return false;
+    	return result;
     }
 
     Search.close = function() {
