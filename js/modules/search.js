@@ -4,24 +4,59 @@ define('search', ['db'], function(db){
     Search.isActive = false;
 
     Search.init = function(searchButton, searchField) {
-    	var self = this;
+    	var self = this,
+    		activeBoxes = [searchButton, searchField];
 
     	self.button = searchButton;
     	self.field  = searchField;
-    	
-    	self.button.addEventListener("click", function () {
-    		self.toggle();
-    		console.log(self.isActive);
+
+    	document.body.addEventListener("click", function (event) {
+  			
+  			if (event.target == self.button || 
+  				event.target.parentNode == self.button) {
+  				self.toggle();
+  			}
+
+  			// if (!isDescendantOrSelf(event.target, activeBoxes)) {
+  			// 	self.close();
+  			// }
+
     	});
+
+    }
+    /*
+		Incorrect return FIX!!!!
+    */
+    function isDescendantOrSelf(child,possibleParents) {
+    	var currentElement = child;
+
+    	possibleParents.forEach( function (item, i) {
+
+    		while (currentElement != document.body) {
+
+    			if (currentElement == item) {
+    				
+    				return true;
+    			}
+
+    			currentElement = currentElement.parentNode;
+    		}
+    	});
+
+    	return false;
     }
 
-    Search.toggle = function () {
+    Search.close = function() {
+    	this.field.classList.remove("search-active");
+    }
 
-    	if (this.isActive) {
-    		this.field.style.width = '0px';
-    		this.isActive = false; 
+    Search.toggle = function() {
+    	if(this.isActive) {
+    		this.field.classList.toggle("search-active");
+    		this.isActive = false;
     	} else {
-    		this.field.style.width = '150px';
+    		this.field.focus();
+    		this.field.classList.toggle("search-active");
     		this.isActive = true;
     	}
     }

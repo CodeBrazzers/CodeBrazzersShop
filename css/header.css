@@ -112,23 +112,25 @@
     background-color: #7F993A;
 }
 
-
-
-#searchField {
+.search-field {
     color: #464547;
     border: 0px;
     float: left;
     height: 44px;
     width: 0px;
     margin-top: 8px;
+}
+
+.search-active {
+    width: 150px;
     padding-left: 10px;
 }
 
-#searchField:focus {
+.search-field:focus {
     
 }
 
-#searchField {
+.search-field {
     transition-property: width;
     transition-duration: 0.5s;
 }
