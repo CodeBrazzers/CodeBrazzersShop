@@ -16,21 +16,20 @@ define('search', ['db'], function(db){
   				event.target.parentNode == self.button) {
   				self.toggle();
   			}
-
+  			
   			if (!isDescendantOrSelf(event.target, activeBoxes)) {
   				self.close();
   			}
-
     	});
 
     }
    
     function isDescendantOrSelf(child,possibleParents) {
-    	var currentElement = child,
+    	var currentElement,
     		result = false;
 
     	possibleParents.forEach( function (item, i) {
-
+    		currentElement = child;
     		while (currentElement != document.body) {
 
     			if (currentElement == item) {
