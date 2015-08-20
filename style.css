@@ -1,0 +1,319 @@
+* {
+	box-sizing: border-box;
+}
+
+.leftfloat {float: left;}
+.bigFont {font-size: 1.3em;}
+.absoluteHeight {height: 100%;}
+.absoluteWidth {width: 100%;}
+
+body {
+	margin: 0;
+}
+
+header {
+	height: 60px;
+	background-color: black;
+	margin: 0 auto 0 auto;
+}
+
+ul, li {
+	margin: 0;
+	padding: 0;
+	display: inline-block;
+}
+
+ul li:first-child {
+	font-size: 1.3em;
+	line-height: 40px;
+}
+
+ul li:nth-child(2), li:nth-child(3), li:nth-child(4), li:nth-child(5), li:nth-child(6) {
+	margin-left: 40px;
+	line-height: 40px;
+	font-size: 1.3em;
+}
+
+a {
+	border-bottom: 1px dotted blue;
+	text-decoration: none;
+}
+
+div {
+	overflow: hidden;
+}
+
+.container {
+	width: 80%;
+	margin: 0 auto 0 auto;
+}
+
+.categoriesAndSlide {
+	height: 300px;
+	margin-top: 2%;
+}
+
+.category {
+	width: 50%;
+}
+
+.category1, .category2, .category3, .category4 {
+	width: 49%;
+	height: 49.5%;
+	border: 1px solid grey;
+	border-radius: 3px;
+}
+
+.category2, .category4 {
+	margin-left: 1%;
+}
+
+.category3, .category4 {
+	margin-top: 0.5%;
+}
+
+.categoryImg1, .categoryImg2, .categoryImg3, .categoryImg4 {
+	background: url(iphone.jpg) 100% no-repeat ;
+	width: 50%;
+}
+
+.categoryImg2 {
+	background-image: url(refrig.jpg);
+}
+
+.categoryImg3 {
+	background-image: url(screen.jpg);
+}
+
+.categoryImg4 {
+	background-image: url(camera.jpg);
+}
+
+.categoryDescription {
+	float: right;
+	width: 50%;
+	overflow: hidden;
+}
+
+.categoryName {
+	height: 15%;
+	margin-top: 10%;
+	color: red;
+}
+
+.categoryInfo {
+	height: 45%;
+	overflow: hidden;
+}
+
+.categoryBtn {
+	width: 70%;
+	border-radius: 5px;
+	text-align: center;
+	color: white;
+	line-height: 28px;
+	background-image: linear-gradient(#660099, #330033);
+}
+
+.categoryBtn:hover {
+	box-shadow: inset 0px 0px 15px 5px rgba(0,0,0,0.3);
+}
+
+.slide {
+	width: 50%;
+	float: right;
+	background-image: url(slider2.jpg);
+}
+
+.goodsInfo {
+	margin-top: 10%;
+	width: 100%;
+}
+
+.categorySelection {
+	overflow: hidden;
+	margin-top: 3%;
+}
+
+.leftArrow, .rigthArrow {
+	width: 5%;
+	height: 38px;
+	border: 1px solid grey;
+}
+
+.selectField {
+	width: 89.6%;
+	height: 38px;
+	border-top: 1px solid grey;
+	border-bottom: 1px solid grey;
+}
+
+.selectField ul li {
+	margin-left: 28px;
+}
+
+.selectField ul li:first-child {
+	margin-left: 0px;
+}
+
+.selectField ul li:hover {
+	background-color: grey;
+	color: white;
+}
+
+.goodsSelection {
+	height: 220px;
+	margin-top: 3%;
+}
+
+.leftSelect, .rightSelect {
+	height: 60%;
+	width: 6%;
+	border: 1px solid grey;
+}
+
+.item {
+	margin-left: 3.52%;
+	width: 13%;
+}
+
+.itemPic {
+	border: 1px solid grey;
+	height: 60%;
+	width: 100%;
+}
+
+.itemInfo, .itemPrice, .newsInfo, .newsBlock {
+	margin-top: 5%;
+}
+
+.rightSelect {
+	float: right;
+}
+
+.subscription {
+	background-color: grey;
+	line-height: 40px;
+	height: 40px;
+}
+
+.overviewsAndArticles {
+	width: 70%;
+	height: 400px;
+}
+
+.mainArticle {
+	width: 50%;
+	background: url(android.png) 50% 8% no-repeat;
+}
+
+.otherArticles {
+	width: 50%;
+}
+
+.otherArticles1, .otherArticles2, .otherArticles3 {
+	height: 33%;
+}
+
+.goodsTitle, .categorySelection {
+    width: 100%;
+    height: 40px;
+}
+
+div.otherArticles:first-child {
+	background-color: black;
+}
+
+footer {
+
+	width: 100%;
+	height: 300px;
+	background-color: black;
+	overflow: hidden;
+}
+
+.footerTop {
+	width: 100%;
+	height: 80%;
+	float: left;
+	background-color: #F9FBFB;
+	overflow: hidden;
+}
+
+.footerCentralBlock {
+	width: 40%;
+	margin: 0 auto 0 auto;
+	height: 100%;
+	overflow: hidden;
+}
+
+.SocialIconsLocation {
+	float: left;
+	width: 100%;
+	height: 40%;
+	background-color: #F9FBFB;
+	overflow: hidden;
+}
+
+#twitter, #facebook, #vk, #googleplus, #skype, #instagram {
+	margin-top: 2.5%;
+	width: 64px;
+	height: 64px;
+	float: left;
+}
+
+#facebook, #vk, #googleplus, #instagram, #skype {
+ 	margin-left: 10.5%;
+ }
+
+#twitter {
+	background: url(twitterb.png) 50% no-repeat;
+}
+
+#skype {
+	background: url(skypeb.png) 50% no-repeat;
+}
+
+#vk {
+	background: url(vkb.png) 50% no-repeat;
+}
+
+#googleplus {
+	background: url(googleplusb.png) 50% no-repeat;
+}
+
+#instagram {
+	background: url(instagramb.png) 50% no-repeat;
+}
+
+#twitter:hover {
+	background-image: url(twitter.png);
+}
+
+#skype:hover {
+	background-image: url(skype.png);
+}
+
+#vk:hover {
+	background-image: url(vk.png);
+}
+
+#googleplus:hover {
+	background-image: url(googleplus.png);
+}
+
+#instagram:hover {
+	background-image: url(instagram.png);
+}
+
+.footerMenu {
+	display: inline-block;
+}
+
+.footerBottom {
+	width: 100%;
+	color: #E0FFE0;
+	text-align: center;
+	float: left;
+	line-height: 60px;
+}
